@@ -1,0 +1,10 @@
+exports.name = "Pueblo";
+exports.room = "rm_001";
+exports.start_x = 50;
+exports.start_y = 50;
+exports.clients = [];
+exports.npcs = [];
+exports.mobs = [];
+exports.tiles = maphandler.return_map_array(require("../JsonMaps/" + this.room + ".json"));
+exports.grid = maphandler.return_grid_array(this.tiles);
+exports.object_tiles = maphandler.return_map_array_empty();
